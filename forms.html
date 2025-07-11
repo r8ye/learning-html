@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Pls answer this!!!</p>
+
+    <form method="POST" action="" id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" placeholder="Ex: John Doe" required>
+          <br><br>
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" placeholder="Ex: sample@email.com" required>
+          <br><br>
+          <label for="number" id="number-label">Age:</label>
+          <input type="number" id="number" min="1" max="100" placeholder="Ex: 69">
+      </fieldset>
+
+      <fieldset>
+        <legend>Color</legend>
+
+          <label for="color" id="color">What's ur favorite color?</label>
+          <select id="dropdown" name="dropdown">
+            <option value="red" id="dropdown" >Red</option>
+            <option value="blue" id="dropdown">Blue</option>
+            <option value="green" id="dropdown">Green</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender</legend>
+
+          <label for="gender" id="gender">What's ur gender?</legend>
+          <br><br>
+          <label for="male" id="male-label">Male</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="female" id="female-label">Female</label>
+          <input type="radio" id="female" name="gender" value="female">
+      </fieldset>
+
+      <fieldset>
+        <legend>Interests</legend>
+
+          <label for="interests" id="interests-label">What are ur interest/s?</label>
+          <br><br>
+          
+          <label for="full-stack" id="full-stack-label">Full Stack</label>
+          <input type="checkbox" id="full-stack" name="full-stack" value="full-stack">
+
+          <label for="machine-learning" id="machine-learning-label">Machine Learning</label>
+          <input type="checkbox" id="machine-learning" name="machine-learning" value="machine-learning">
+          <br><br>
+
+          <label for="front-end" id="front-end-label">Front End</label>
+          <input type="checkbox" id="front-end" name="front-end" value="front-end">
+
+          <label for="back-end" id="back-end-label">Back End</label>
+          <input type="checkbox" id="back-end" name="back-end" value="back-end">
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <textarea 
+          id="feedback" 
+          name="feedback" 
+          rows="10" 
+          cols="50">
+        </textarea>
+      </fieldset>
+
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
